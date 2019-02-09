@@ -1,5 +1,10 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
 require('./services/passport');
+require('./models/User';)
+
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
@@ -14,3 +19,4 @@ app.listen(PORT);
 //heroku open
 //console.developers.google.com
 //passport js
+//mlab
